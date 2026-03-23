@@ -205,6 +205,7 @@ void AwsActor::makeAttachWithoutDecodeByVector(vector<string>& vecContent, const
 				{
 					FileStream* fs = CFileStreamFactory::create();
 					size_f fsize = fs->fileSize(att.appfpath);
+					delete fs;
 					stringstream strstream;
 					strstream << fsize;
 					att.fsize = strstream.str();
