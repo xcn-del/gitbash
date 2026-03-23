@@ -103,6 +103,7 @@ bool ICloudActor::subAction(int actionTag)
 		setMappingkeyComposeItem();
 		insertRedisComposeInfo();
 		return false;
+		break;
 	case 13:
 		{
 			if(getMailContent().getAttachs().empty()){
